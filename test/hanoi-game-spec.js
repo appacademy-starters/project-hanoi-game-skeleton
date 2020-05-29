@@ -64,7 +64,7 @@ describe("HanoiGame", () => {
 
       it("should return false if startTowerIdx indicates an empty tower", () => {
         const gameWithEmptyTowers = new HanoiGame([[1, 2, 3], [], []]);
-        // Move a block on tower 0 to tower 1
+        // Move a block on tower 1 to tower 2
         expect(gameWithEmptyTowers.isValidMove(1, 2)).to.be.false;
       });
 
